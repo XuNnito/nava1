@@ -1,0 +1,81 @@
+html{
+    height: 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-flow: wrap;
+    overflow: hidden;
+    width: 100%;
+    height: 530px;
+}
+.container .snow1{
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+    position: relative;
+    border-radius: 50px;
+    background: repeating-conic-gradient(#E4FBFF 0%, #fff1 10%, #E4FBFF 20%);
+}
+.container .snow2{
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    position: relative;
+    border-radius: 50px;
+    background: repeating-conic-gradient(#EDEEF7 0%, #fff1 10%, #EDEEF7 20%);
+}
+.snow1:hover, .snow2:hover{
+    visibility: hidden;
+}
+
+.s1{
+    animation: snow 2s 2s infinite;
+}
+.s2{
+    animation: snow 2s 1s infinite;
+}
+.s3{
+    animation: snow 2s 4s infinite;
+}
+.s4{
+    animation: snow 2s 3s infinite;
+}
+.s5{
+    animation: snow 2s .1s infinite;
+}
+
+.wish {
+    display: flex;
+    flex-flow: wrap;
+    position: absolute;
+    top: 10%;
+    
+}
+
+.wish img{
+    width: 98%;
+    filter: drop-shadow(0 0 2px skyblue);
+}
+
+@keyframes snow{
+    0%{
+        visibility: visible;
+        top: 5px;
+        transform: scale(2);
+        
+    }
+    100%{
+        top: 50%;
+        opacity: 10%;
+        
+    }
+}
+
+#music{
+  position: fixed;
+  top: 0;
+  left: 70%;
+
+}
